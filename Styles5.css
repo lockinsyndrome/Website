@@ -1,0 +1,525 @@
+/**CREDITS:
+ * 98.css
+ * Copyright (c) 2020 Jordan Scales <thatjdanisso.cool>
+ * https://github.com/jdan/98.css/blob/main/LICENSE
+ */
+/* https://w3schools.invisionzone.com/topic/56137-make-tab-active-open-when-page-loads/*/
+
+.title-bar {
+  background: linear-gradient(90deg, var(blue), var(blue-light));
+  padding: 3% -1% 0% 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+    border-style: groove;
+  border-width: thick;
+}
+.title-bar.active {
+  background: linear-gradient(90deg, var(--dialog-gray), var(--dialog-gray-light));
+}
+.title-bar-controls {
+  display: flex;
+}
+
+.title-bar-controls button {
+  padding: 0;
+  display: block;
+  min-width: -5%;
+  min-height: -5%;
+  
+}
+
+.title-bar-controls button:active {
+  padding: 0;
+}
+
+.title-bar-controls button:focus {
+  outline: none;
+}
+.nav {
+  position: absolute;
+  top: 1%;
+  left: 7%;
+  width: 18%;
+  padding: -1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+    border-style: groove;
+  border-width: thick;
+  
+}
+.nav a.active {
+  background-color: #040490;
+  color: whitesmoke;
+  padding: 0% 9%;
+}
+.nav a:hover {
+  background-color: #f9e179;
+  color: black;
+  border: dotted 1% #fff;
+  box-shadow:
+    0 6px 5px 0 #ff6e6e,
+    0 17px 52px 0 rgba(255, 255, 255, 0);
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+}
+.active-tabs {
+  width: 800%;
+  padding: 10%;
+  position: relative;
+  margin: 20% auto;
+}
+
+.active-tabs input {
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+}
+.FLEX {
+  font-family: "VT323", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+}
+.flextext {
+  font-family: "VT323", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+}
+.tab {
+  font-family: "VT323", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+}
+.tablink {
+  font-family: "DotGothic16", serif;
+  font-style: normal;
+  font-size: larger;
+  background-color: antiquewhite;
+  align-content: center;
+  text-align-last: center;
+  padding-bottom: 2%;
+  padding-right: 3em;
+  padding-left: 5%;
+  border-radius: 8%;
+  border-style: groove;
+  border-width: thin;
+}
+.YThr1 {
+  background-image: url("windows-7-background-imfecqv6cnsicbx4.jpg");
+  position: absolute;
+  width: 41.2%;
+  align-content: center;
+  left: 58.4%;
+  bottom: 89%;
+  display: block;
+  height: 2%;
+  margin: 2em 0;
+  padding: 0;
+  border-style: groove;
+  border-width: thin;
+}
+.YThr2 {
+  background-color: aliceblue;
+  position: absolute;
+  width: 41.2%;
+  align-content: center;
+  left: 58.4%;
+  bottom: 87%;
+  display: block;
+  height: 2%;
+  margin: 2em 0;
+  padding: 0;
+  border-style: groove;
+  border-width: thin;
+}
+.YThr3 {
+  background-color: #7185da;
+  position: absolute;
+  width: 47.2%;
+  align-content: center;
+  left: 0.4%;
+  bottom: 90%;
+  display: block;
+  height: 3%;
+  margin: 2em 0;
+  padding: 0;
+  border-style: groove;
+  border-width: thin;
+}
+.fb-bar {
+  background: linear-gradient(90deg, var(blue), var(blue-light));
+  padding: 1% 2% 1% 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  border-style: groove;
+  border-width: thick;
+}
+.fb-bar-controls button {
+  padding: 0;
+  display: block;
+  min-width: 16%;
+  min-height: 14%;
+}
+
+.fb-bar-controls button:active {
+  padding: 0;
+}
+
+.fb-bar-controls button:focus {
+  outline: none;
+}
+.yt-bar {
+  background: linear-gradient(90deg, var(blue), var(blue-light));
+  padding: 0% 2% 0% 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  border-style: groove;
+  border-width: thick;
+}
+
+.yt-bar-controls button {
+  padding: 0;
+  display: block;
+  min-width: 16%;
+  min-height: 14%;
+}
+
+.yt-bar-controls button:active {
+  padding: 0;
+}
+
+.yt-bar-controls button:focus {
+  outline: none;
+}
+.YTvids {
+  text-align-last: center;
+  font-family: "DotGothic16", serif;
+  font-style: normal;
+  font-size: larger;
+  background-color: #9ab8ea;
+  border-radius: 0%;
+  position: absolute;
+  padding: 0% 0.5%;
+  margin-right: 3%;
+  right: -2%;
+  bottom: -45%;
+  box-shadow:
+    0 6px 12px 0 #3d0404,
+    0 17px 52px 0 rgba(255, 206, 206, 0);
+  border-style: groove;
+  border-width: thick;
+        filter:sepia(19%);
+}
+.anim-bar {
+  background: linear-gradient(90deg, var(blue), var(blue-light));
+  padding: 1% 2% 1% 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  border-style: groove;
+  border-width: thick;
+}
+
+.anim-bar-controls button {
+  padding: 0;
+  display: block;
+  min-width: 16%;
+  min-height: 14%;
+}
+
+.anim-bar-controls button:active {
+  padding: 0;
+}
+
+.anim-bar-controls button:focus {
+  outline: none;
+}
+
+.row1 {
+  position: absolute;
+  padding: 0 -1%;
+  scale: 1.1;
+  right: -89%;
+  bottom: -47%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 179%;
+  box-shadow:
+    0 13px 65px 0 #2f2fac,
+    0 8px 61px 0 rgba(255, 206, 206, 0);
+  border-style: groove;
+  border-width: thick;
+  filter:sepia(22%);
+}
+.row2 {
+  position: absolute;
+  padding: 0 -1%;
+  scale: 1.1;
+  right: -119%;
+  bottom: -47%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 179%;
+  box-shadow:
+    0 13px 65px 0 #1a1a65,
+    0 8px 61px 0 rgba(255, 206, 206, 0);
+  border-style: groove;
+  border-width: thick;
+    filter:sepia(22%);
+}
+.row1:hover {
+  border: 1% solid #777;
+}
+.row2:hover {
+  border: 1% solid #777;
+}
+
+.TAB2 {
+  position: absolute;
+  padding: 0% 37% 0%;
+  scale: 1.1;
+  bottom: -47%;
+  right: 7%;
+  height: 106%;
+  display: block;
+  box-shadow:
+    0 13px 65px 0 #2f2fac,
+    0 8px 61px 0 rgba(255, 206, 206, 0);
+  border-style: groove;
+  border-width: thick;
+}
+.art2 {
+  position: relative;
+  bottom: -0.9em;
+  display: block;
+  left: -108%;
+  width: 0.9em;
+  height: 0.1em;
+  scale: 0.7;
+    filter:sepia(35%);
+}
+.art3 {
+  position: relative;
+  display: block;
+  width: 17em;
+  bottom: 1.4em;
+  right: 231%;
+  height: 14.6em;
+  scale: 0.7;
+      filter:sepia(35%);
+}
+.art4 {
+  position: relative;
+  display: block;
+  width: 17em;
+  bottom: 16.2em;
+  right: 14%;
+  height: 16em;
+  scale: 0.7;
+      filter:sepia(35%);
+}
+.art5 {
+  position: relative;
+  display: block;
+  width: 17em;
+  bottom: 6em;
+  right: 231%;
+  height: 14em;
+  scale: 0.7;
+      filter:sepia(35%);
+}
+.art6 {
+  position: relative;
+  display: block;
+  width: 17em;
+  margin-top: 36%;
+  bottom: 26.1em;
+  right: 120%;
+  height: 14em;
+  scale: 0.7;
+      filter:sepia(35%);
+}
+.art7 {
+  position: relative;
+  display: block;
+  width: 10em;
+  height: 4.5em;
+  bottom: 38.6em;
+  right: 8%;
+  scale: 0.7;
+      filter:sepia(35%);
+}
+.art2:hover {
+  border: 1% solid #777;
+}.art3:hover {
+  border: 1% solid #777;
+}.art4:hover {
+  border: 1% solid #777;
+}.art5:hover {
+  border: 1% solid #777;
+}.art6:hover {
+  border: 1% solid #777;
+}.art7:hover {
+  border: 1% solid #777;
+}.art8:hover {
+  border: 1% solid #777;}
+.art9:hover {
+  border: 1px solid #777;}
+
+
+.art8 {
+  position: absolute;
+  scale: 1.2;
+  bottom: 8.1%;
+  right: 61%;
+  display: block;
+  box-shadow:
+    0 2em 3em 0 #393983,
+    0 8em 3em 0 rgba(255, 206, 206, 0);
+  border-style: groove;
+  border-width: thick;
+      filter:sepia(35%);
+}
+.art9 {
+  position: absolute;
+  scale: 0.8;
+  bottom: -49%;
+  right: 66%;
+  display: block;
+  box-shadow:
+    0 2em 3em 0 #0c0ca2,
+    0 8em 3em 0 rgba(255, 206, 206, 0);
+  border-style: groove;
+border-width: thick;
+      filter:sepia(35%);
+}
+.art10 {
+  position: absolute;
+  scale: 0.9;
+  bottom: -52%;
+  right: 40%;
+  display: block;
+  background-color: #95b8db;
+  box-shadow:
+    0 2em 9em 0 #fffcb6,
+    0 8em 3em 0 rgba(255, 206, 206, 0);
+  border-style: groove;
+  border-width: thick;
+      filter:sepia(12%);
+}
+.art11 {
+  position: absolute;
+  scale: 1.4;
+  bottom: -7%;
+  right: 51.6%;
+  background-color: #95b8db;
+  box-shadow:
+    0 0.1em 4em 0 #c4bf93,
+    0 8em 15em 0 rgba(232, 230, 195, 0);
+  border-style: groove;
+  border-width: thick;
+        filter:sepia(12%);
+}
+
+@media only screen and (max-width: 700px) {
+  .row1 {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .row2 {
+    width: 100%;
+  }
+}
+
+header {
+  background-image: url("windows-7-background-imfecqv6cnsicbx4.jpg");
+  background-repeat: repeat-y;
+  width: 50%;
+}
+.tvwarp {
+  position: fixed;
+  scale: 4;
+  left:35%;
+  bottom:17%;
+  mix-blend-mode:color-burn;opacity: 3%;
+    pointer-events:none;
+}
+.tvwarp2 {
+  position: fixed;
+  scale: 4;
+  left:35%;
+  bottom:17%;
+  mix-blend-mode:color-burn;opacity: 6%;
+    pointer-events:none;
+}
+ .tv {
+    position: fixed;
+    right:32%;
+    margin:0 auto;
+    top:27%;
+	height: 25em;scale: 274%;
+    mix-blend-mode: color-burn;opacity: 26%;
+    pointer-events:none;
+}
+.static {
+    position: fixed;
+    right:21%;
+    margin:0 auto;
+    top:49%;
+	height: 9em;scale: 342%;
+    mix-blend-mode:color-dodge;opacity: 7%;
+    pointer-events:none;
+}
+body {
+  background-image: url("jdxswttpvuu41.jpg");
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+.logo {
+    position: absolute;
+    top:7%;right:48%;
+    mix-blend-mode:hard-light;opacity: 92%;
+    pointer-events:none;
+}
+.footertext1 {
+  position: absolute;
+  align-content: center;
+  text-align-last: center;
+  color: #ef6c6c;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  bottom:-68%;
+  height: 8%;
+  right:0%;
+  background-color: #bee1ff;
+  width: 100%;
+  margin-bottom: 1%;
+  font-style: normal;
+  display: block;
+  font-size:medium;
+  border-style: groove;
+  border-width: thick;
+          filter:sepia(19%);
+}
