@@ -28,6 +28,7 @@ header {
     text-align-last: center;
     color: #ea5858;
     left: 28%;
+max-width: 422%;
 }
 .heart1 {
     position: relative;
@@ -337,6 +338,7 @@ body {
     box-shadow:
         0 650px 59px 0 #6c0202,
         0 -23px 45px 0 rgba(151, 122, 0, 0.87);
+    max-width: 496%;
 }
 .topnav {
     background-image: linear-gradient(180deg, #300000, #300000);
@@ -431,6 +433,7 @@ body {
     padding: 13%;
     box-shadow: -56px 65px;
     pointer-events: none;
+    max-width: 496%;
 }
 .Christ {
     position: absolute;
@@ -440,6 +443,7 @@ body {
     right: 27%;
     top: 200rem;
     mix-blend-mode: lighten;
+    max-width: 496%;
 }
 .Endtext {
     position: relative;
@@ -450,6 +454,7 @@ body {
     margin-right: -68%;
     bottom: 322rem;
     left: 42%;
+    max-width: 496%;
 }
 .Endtext2 {
     position: relative;
